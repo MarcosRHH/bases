@@ -5,7 +5,14 @@
   "projects": {
     "bases": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "prefix": "app",
+          "style": "css",
+          "inlineTemplate": false,
+          "inlineStyle": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -86,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fab09c28-2d33-4de8-bff2-ddcacabea6d5"
   }
 }
